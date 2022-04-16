@@ -24,10 +24,10 @@ jobs:
         run: wget https://github.com/open-policy-agent/opa/releases/download/v0.39.0/opa_linux_amd64 -O ./opa && chmod +x ./opa
         timeout-minutes: 6
       - name: Make bundle
-        run: mkdir bundles && cd example && tar czvf ../bundles/example-bundle.tar.gz ./ 
+        run: mkdir bundles && cd bundle && tar czvf ../bundles/bundle.tar.gz ./ 
         timeout-minutes: 6
       - name: test example bundle
-        run: ./opa test --bundle ./bundles/example-bundle.tar.gz
+        run: ./opa test --bundle ./bundles/bundle.tar.gz
         timeout-minutes: 6
       - name: Deploy bundles
         uses: peaceiris/actions-gh-pages@v3
