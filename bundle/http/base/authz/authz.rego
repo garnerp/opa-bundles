@@ -3,7 +3,7 @@ import input
 import data
 
 default allow = false
-
+default allow = false
 
 allow {
   username := split(lower(input.claims.preferred_username),"@")[0]
