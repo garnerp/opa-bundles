@@ -2,6 +2,10 @@
 # Organise rules into policies. A policy is a set of rules with a hierarchical name
 # [Playground](https://play.openpolicyagent.org/)
 
+
+https://github.com/jonascheng/opa-demo/blob/5130f1fc698f240e04510bb2c9194eee386399a8/policy/rbac.authz.rego
+
+
 package rbac.authz
 
 # user-role assignments
